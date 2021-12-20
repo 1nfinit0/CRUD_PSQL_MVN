@@ -10,9 +10,6 @@ public class Conexion {
 
         try {
             conection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/sencico", "postgres", "postgres");
-            if (conection != null) {
-                System.out.println("Conectado!");
-            }
         } catch (SQLException e) {
             System.out.println(e);
         }
